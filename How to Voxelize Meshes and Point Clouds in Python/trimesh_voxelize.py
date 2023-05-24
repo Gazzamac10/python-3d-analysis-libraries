@@ -5,6 +5,9 @@ import os
 mesh_path = os.path.join('mesh','rooster.obj')
 mesh = trimesh.load(mesh_path)
 
+
+
+
 # Voxelize the loaded mesh with a voxel size of 0.01. We also call hollow() to remove the inside voxels, which will help with color calculation
 angel_voxel = mesh.voxelized(0.01).hollow()
 
